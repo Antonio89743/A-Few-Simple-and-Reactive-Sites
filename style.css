@@ -33,12 +33,10 @@ header{
 }
 
 .flexbox-container > div > img{
-    height: 50%;
-    width: 30%;
+    height: 60px;
+    width: 75px;
     padding: 15px;
     align-self: center;
-    max-width: 30%;
-    min-width: 30%;
 }
 
 .text-href{
