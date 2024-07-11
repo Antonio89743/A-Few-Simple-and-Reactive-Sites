@@ -1,0 +1,250 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 20px;
+    font-size: 25px;
+}
+
+.site-name-container {
+    display: flex;
+    margin-left: 40px;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.site-name-container > h1 {
+    font-size: clamp(2vw, 10vw, 8vw);
+    flex: 1;
+}
+
+.site-name-container > button {
+    align-self: flex-end;   
+    float: right;  
+    margin-right: 40px;
+
+}
+
+.scroll-down-button {
+    border: none;
+    background: none;
+}
+
+.scroll-down-button:hover {
+    cursor: pointer;
+}
+
+.bio-container {
+    display: flex;
+    margin: 40px;
+    align-items: stretch;
+}
+
+.bio-container > div {
+    margin-right: 40px;
+}
+
+.bio-container > div > a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.projects-flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-more-flex-container {
+    align-self: flex-end;    
+}
+
+.projects-more-flex-container > button {
+    float: right;  
+    border: none;
+    background: none;
+}
+
+.projects-description-flex-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.projects-description-projects-flex-container {
+    width: 300px;
+}
+
+.projects-description-flex-container > div {
+    padding: 40px;
+    text-align: left;
+}
+
+.projects-exaples-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-exaples-flex-container > div {
+    padding: 15px;
+}
+
+.projects-exaples-flex-container > div > img {
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px;
+}
+
+.projects-exaples-flex-container > div > p {
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.expertise-flex-container {
+    margin: 60px;
+}
+
+.expertise-details-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .expertise-details-flex-container > div {
+    width: 500px;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .expertise-details-flex-container > div > p {
+    word-wrap: break-word;
+    text-align: left;
+  }
+
+  .expertise-details-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .expertise-details-flex-container > div {
+    width: 500px;
+    padding: 40px;
+    padding-left: 15px;
+    text-align: left;
+  }
+
+.tagline {
+    margin: 0;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+.tagline > h1 {
+    font-size: 50px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap; 
+    justify-content: center;
+    position: relative;
+}
+
+.testimonials {
+    margin: 50px;
+}
+
+.testimonials-flex-container {
+    display: flex; 
+    flex-flow: row wrap;
+}
+
+.testimonials-content {
+    width: 600px;
+    flex-grow: 1;
+    text-wrap: wrap;
+    margin-right: 50px;
+}
+
+.testimonial-content > p {
+    text-wrap: wrap;
+}
+
+.testimonial-name {
+    width: 200px;
+    align-self: flex-end;
+}
+
+.contact-flex-container {
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-flex-container > h1 {
+    font-size: 90px;
+}
+
+.contact-href {
+    margin-top: 10px;
+    background-color: black;
+    border-radius: 60px;
+    width: 400px;
+    height: 80px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+}
+
+.contact-href:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-flex-container {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+
+.footer-flex-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer-flex-container > p{
+    margin: 5px;
+}
+
+.footer-flex-container-end {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    
+}
+
+.footer-flex-container-end > a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.footer-flex-container-end > a:hover{
+    font-weight: bold;
+}
