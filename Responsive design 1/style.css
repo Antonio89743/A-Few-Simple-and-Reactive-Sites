@@ -7,13 +7,14 @@
 header {
     padding: 20px;
     font-size: 25px;
+    text-align: center;
 }
 
 .navbar {
     background-color: black;
-    border-radius: 60px;
+    border-radius: 80px;
     width: 500px;
-    height: 50px;
+    height: 56px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -47,6 +48,7 @@ header {
     border-radius: 100%;
     font-size: 15px;
     padding: 2px;
+    margin: 5px;
     vertical-align: middle;
 }
 
@@ -64,9 +66,11 @@ a.active {
 
 .site-name-container {
     display: flex;
-    margin-left: 40px;
+    margin-left: 112px;
+    margin-top: 30px;
     align-items: stretch;
     flex-direction: row;
+    text-align: center;
 }
 
 .site-name-container > h1 {
@@ -77,7 +81,7 @@ a.active {
 .site-name-container > button {
     align-self: flex-end;   
     float: right;  
-    margin-right: 40px;
+    margin-right: 112px;
 }
 
 .scroll-down-button {
@@ -90,23 +94,38 @@ a.active {
 }
 
 .bio-container {
+    margin-left: 112px;
+    margin-right: 112px;
+    margin-top: 40px;
     display: flex;
-    margin: 40px;
     align-items: stretch;
+    justify-content: space-between;
 }
 
 .bio-container > div {
     margin-right: 40px;
 }
 
+.bio-container > div > h3 {
+    font-size: 24px;
+}
+
+.bio-container-content {
+    width: 20%;
+}
+
 .bio-container > div > a {
     margin-right: 40px;
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 .projects-flex-container {
-    width: 100%;
+    margin-top: 40px;
+    margin-left: 112px;
+    margin-right: 112px;
+    width: 100% - 224px;
     display: flex;
     flex-direction: column;
 }
@@ -119,6 +138,24 @@ a.active {
     float: right;  
     border: none;
     background: none;
+    font-size: 20px;
+}
+
+.projects-exaple-crtly-background {
+    width: 592px;
+    height: 500px;
+    margin-bottom: 20px;
+    border-radius: 32px;
+    background-image: linear-gradient(rgba(122, 25, 243, 1), rgba(169, 82, 243, 1));
+    overflow: hidden;
+}
+
+.projects-exaple-crtly-background > img {
+    width: 481px;
+    height: 474px;
+    top: 40px;
+    left: 55px;
+    position: relative;
 }
 
 .projects-description-flex-container {
@@ -129,64 +166,96 @@ a.active {
 }
 
 .projects-description-projects-flex-container {
-    width: 300px;
+    width: 20%;
+    font-size: 20px;
+}
+
+.projects-description-projects-flex-container > h1 {
+    font-size: 48px;
 }
 
 .projects-description-flex-container > div {
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-align: left;
 }
 
-.projects-exaples-flex-container{
-    display: flex;
-    flex-wrap: wrap;
+.projects-examples-grid {
+    display: grid;
+    grid-row: auto auto;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    grid-template-columns: repeat(auto-fill, minmax(min(592px, 100%), auto));
+    justify-content: space-between;
 }
 
-.projects-exaples-flex-container > div {
-    padding: 15px;
+.projects-examples-grid > div {
+    margin: 0px;
+    padding: 0px;
 }
 
-.projects-exaples-flex-container > div > img {
-    width: 300px;
-    height: 300px;
+.projects-examples-grid > div > img {
+    width: 592px;
+    height: 500px;
     padding-bottom: 20px;
 }
 
-.projects-exaples-flex-container > div > p {
+.projects-examples-grid > div > h5 {
+    font-size: 20px;
+    width: 100%;
+}
+
+.projects-examples-grid > div > p {
     font-size: 13px;
     padding-top: 5px;
+    font-size: 20px;
+    width: 100%;
 }
 
 .expertise-flex-container {
-    margin: 60px;
+    margin-left: 112px;
+    margin-top: 60px;
 }
 
-.expertise-details-flex-container {
-    display: flex;
-    flex-wrap: wrap;
+.expertise-flex-container > h1 {
+    font-size: 48px;
+}
+
+.expertise-details-grid-container {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-right: 112px;
+    grid-template-columns: 592px 500px;
+    display: grid;
+    grid-row: auto auto;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    grid-template-columns: repeat(auto-fill, minmax(min(592px, 100%), auto));
+    justify-content: space-between;
   }
 
-  .expertise-details-flex-container > div {
-    width: 500px;
+  .expertise-details-grid-container > div {
+    width: 592px;
     padding: 0px;
-    text-align: center;
-  }
 
-  .expertise-details-flex-container > div > p {
-    word-wrap: break-word;
-    text-align: left;
-  }
-
-  .expertise-details-flex-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .expertise-details-flex-container > div {
-    width: 500px;
-    padding: 40px;
+    margin-left: 0px;
     padding-left: 15px;
     text-align: left;
+  }
+
+.expertise-details-grid-container > div > h2 {
+    text-align: left;
+}
+
+  .expertise-details-grid-container > div > p {
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .expertise-details-grid-container {
+    display: flex;
+    flex-wrap: wrap;
   }
 
 .tagline {
@@ -197,46 +266,58 @@ a.active {
     display: flex;
     align-items: center;
     margin: 0;
-    overflow: hidden;
+    overflow: clip;
     text-align: center;
     width: 100%;
-    height: 110px;
+    height: 249px;
 }
 
 .tagline > h1 {
-    font-size: 60px;
+    font-size: 140px;
     text-align: center;
     white-space: nowrap; 
     position: relative;
+    text-overflow: clip;
 }
 
 .testimonials {
-    margin: 50px;
+    margin-top: 60px;
+    margin-left: 112px;  
+}
+
+.testimonials > h1 {
+    font-size: 64px;
+    margin-bottom: 30px;
 }
 
 .testimonials-flex-container {
     display: flex; 
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.testimonials-content {
-    width: 600px;
+.testimonial-content {
+    width: 50%;
     flex-grow: 1;
-    text-wrap: wrap;
-    margin-right: 50px;
+    margin-right: 50px; 
 }
 
 .testimonial-content > p {
+    font-size: 48px;
     text-wrap: wrap;
 }
 
 .testimonial-name {
-    width: 200px;
+    width: 20%;
     align-self: flex-end;
 }
 
+.testimonial-name > p {
+    font-size: 20px;
+}
+
 .contact-flex-container {
-    margin: 60px;
+    margin: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -245,15 +326,17 @@ a.active {
 }
 
 .contact-flex-container > h1 {
-    font-size: 90px;
+    font-size: 140px;
 }
 
 .contact-href {
-    margin-top: 10px;
+    padding: 32px;
+    margin: 48px;
+    margin-bottom: 150px;
     background-color: black;
-    border-radius: 60px;
-    width: 400px;
-    height: 80px;
+    border-radius: 144px;
+    width: 262px;
+    height: 92px;
     text-decoration: none;
     color: white;
     text-align: center;
@@ -269,15 +352,14 @@ a.active {
     display: flex;
     flex-direction: row;
     margin: 40px;
-}
-
-.footer-flex-container {
-    display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer-flex-container > p{
     margin: 5px;
+    margin-left: 112px;
+    margin-right: 112px;
+    font-size: 14px;
 }
 
 .footer-flex-container-end {
