@@ -232,14 +232,14 @@ a.active {
     grid-row: auto auto;
     grid-column-gap: 60px;
     grid-row-gap: 60px;
-    grid-template-columns: repeat(auto-fill, minmax(min(592px, 100%), auto));
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
   }
 
   .expertise-details-grid-container > div {
-    width: 592px;
+    width: 40%;
     padding: 0px;
     margin-left: 0px;
     padding-left: 15px;
@@ -387,6 +387,302 @@ a.active {
         justify-content: space-between;
     }
 
+}
+
+@media only screen and (max-width: 1470px) {
+
+    header {
+        padding: 40px;
+        padding-bottom: 32px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .site-name-container {
+        display: flex;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 60px;
+        align-items: start;
+        flex-direction: row;
+        text-align: left;
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+
+    .site-name-container > h1 {
+        font-size: 84px;
+        flex: 1;
+    }
+
+    .site-name-container > button {
+        align-self: end;   
+        float: left;  
+    }
+    
+    .bio-container {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 0px;
+        column-gap: 48px;
+        row-gap: 48px;
+        flex-direction: row;
+        align-items: normal;
+        flex-wrap: wrap;
+    }
+    
+    .bio-container-content {
+        width: 60%;
+        line-height: 24px;
+    }
+
+    .bio-container > div {
+        margin-right: 0px;
+    }
+
+    .bio-container > div > a {
+        margin-right: 0px;
+    }
+
+    .projects-flex-container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .projects-more-flex-container {
+        align-self: flex-end;    
+    }
+
+    .projects-more-flex-container > button {
+        float: right;  
+        border: none;
+        background: none;
+        font-size: 20px;
+    }
+
+    .projects-description-flex-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    .projects-description-projects-flex-container {
+        width: 60%;
+    }
+    
+    .projects-description-projects-flex-container > h1 {
+        font-size: 24px;
+        line-height: 31.2px;
+    }
+
+    .projects-description-projects-flex-container > p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .projects-description-flex-container > div {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: left;
+    }
+    
+    .projects-examples-grid {
+        display: grid;
+        grid-row: auto auto;
+        grid-column-gap: 60px;
+        grid-row-gap: 60px;
+        grid-template-columns: 1fr 1fr;
+        
+        margin: 0px;
+        justify-content: space-between;
+    }
+    
+    .projects-examples-grid > div {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .projects-examples-grid > div > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .projects-exaple-crtly-background {
+        width: 100%;
+        height: auto;
+        border-radius: 32px;
+        background-image: linear-gradient(rgba(122, 25, 243, 1), rgba(169, 82, 243, 1));
+        overflow: hidden;
+    }
+    
+    .projects-exaple-crtly-background > img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 5%);
+    }
+    
+    .projects-examples-grid > div > h5 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    .projects-examples-grid > div > p {
+        font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    .expertise-flex-container {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 48px;
+        margin-top: 60px;
+    }
+
+    .expertise-flex-container  > h1 {
+        margin-left: 13px;
+        font-size: 31.2px;
+        line-height: 31.2px;
+    }
+
+    .expertise-details-grid-container {
+        margin-right: 40px;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        margin-right: 40px;
+        grid-template-columns: 592px 500px;
+        display: grid;
+        grid-row: auto auto;
+        grid-column-gap: 60px;
+        grid-row-gap: 60px;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+
+    .expertise-details-grid-container > div {
+        width: 100%;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .expertise-details-grid-container > p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .tagline {
+        height: 150px;
+        width: 100%;
+    }
+    
+    .tagline > h1 {
+        font-size: 84px;
+    }
+
+    .testimonials {
+        margin-top: 60px;
+        margin-left: 40px;  
+        margin-right: 40px;
+    }
+
+    .testimonials > h1 {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+    
+    .testimonials-flex-container {
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    .testimonial-content {
+        width: 70%;
+        flex-grow: 1;
+        margin-right: 50px; 
+    }
+    
+    .testimonial-content > p {
+        font-size: 24px;
+        text-wrap: wrap;
+    }
+    
+    .testimonial-name {
+        width: 20%;
+        align-self: flex-end;
+        margin-top: 13px;
+    }
+    
+    .testimonial-name > p {
+        font-size: 14px;
+    }
+
+    .contact-flex-container {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .contact-flex-container > h1 {
+        font-size: 79.21px;
+    }
+
+    .contact-href {
+        padding: 0px;
+        margin-top: 27.16px;
+        margin-bottom: 24px;
+        width: 262px;
+        height: 76px;
+        line-height: 76px;
+        font-size: 20px;
+        justify-content: center;        
+    }
+
+    .contact-href > a {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .footer-flex-container {
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 80px;
+        justify-content: space-between;
+        row-gap: 24px;
+    }
+    
+    .footer-flex-container > p{
+        margin: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 14px;
+    }
+    
+    .footer-flex-container-end {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+        column-gap: 40px;
+    }
+    
+    .footer-flex-container-end > a {
+        margin: 0px;
+        text-decoration: none;
+        color: black;
+        position: relative;
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -578,6 +874,7 @@ a.active {
 
     .expertise-details-grid-container {
         margin-right: 16px;
+        grid-template-columns: 1fr;
     }
 
     .expertise-details-grid-container > div {
@@ -672,303 +969,6 @@ a.active {
         flex-direction: column;
         margin-left: 16px;
         margin-top: 24px;
-        justify-content: space-between;
-        row-gap: 24px;
-    }
-    
-    .footer-flex-container > p{
-        margin: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        font-size: 14px;
-    }
-    
-    .footer-flex-container-end {
-        display: flex;
-        flex-direction: row;
-        margin-left: 0px;
-        column-gap: 40px;
-    }
-    
-    .footer-flex-container-end > a {
-        margin: 0px;
-        text-decoration: none;
-        color: black;
-        position: relative;
-    }
-}
-
-@media only screen and (max-width: 1470px) {
-
-    header {
-        padding: 40px;
-        padding-bottom: 32px;
-        font-size: 32px;
-        text-align: center;
-    }
-
-    .site-name-container {
-        display: flex;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 60px;
-        align-items: start;
-        flex-direction: row;
-        text-align: left;
-        column-gap: 40px;
-        row-gap: 40px;
-    }
-
-    .site-name-container > h1 {
-        font-size: 84px;
-        flex: 1;
-    }
-
-    .site-name-container > button {
-        align-self: end;   
-        float: left;  
-    }
-    
-    .bio-container {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-bottom: 0px;
-        column-gap: 48px;
-        row-gap: 48px;
-        flex-direction: row;
-        align-items: normal;
-        flex-wrap: wrap;
-    }
-    
-    .bio-container-content {
-        width: 60%;
-        line-height: 24px;
-    }
-
-    .bio-container > div {
-        margin-right: 0px;
-    }
-
-    .bio-container > div > a {
-        margin-right: 0px;
-    }
-
-    .projects-flex-container {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    .projects-more-flex-container {
-        align-self: flex-end;    
-    }
-
-    .projects-more-flex-container > button {
-        float: right;  
-        border: none;
-        background: none;
-        font-size: 20px;
-    }
-
-    .projects-description-flex-container {
-        width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    
-    .projects-description-projects-flex-container {
-        width: 60%;
-    }
-    
-    .projects-description-projects-flex-container > h1 {
-        font-size: 24px;
-        line-height: 31.2px;
-    }
-
-    .projects-description-projects-flex-container > p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .projects-description-flex-container > div {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        text-align: left;
-    }
-    
-    .projects-examples-grid {
-        display: grid;
-        grid-row: auto auto;
-        grid-column-gap: 60px;
-        grid-row-gap: 60px;
-        grid-template-columns: repeat(auto-fill, minmax(min(450px, 100%), auto));
-        margin: 0px;
-    }
-    
-    .projects-examples-grid > div {
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-    }
-    
-    .projects-examples-grid > div > img {
-        width: 100%;
-        height: auto;
-    }
-
-    .projects-exaple-crtly-background {
-        width: 100%;
-        height: auto;
-        border-radius: 32px;
-        background-image: linear-gradient(rgba(122, 25, 243, 1), rgba(169, 82, 243, 1));
-        overflow: hidden;
-    }
-    
-    .projects-exaple-crtly-background > img {
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 5%);
-    }
-    
-    .projects-examples-grid > div > h5 {
-        margin-top: 20px;
-        font-size: 20px;
-    }
-    
-    .projects-examples-grid > div > p {
-        font-size: 13px;
-        margin-top: 5px;
-        margin-bottom: 20px;
-        font-size: 20px;
-    }
-    
-    .expertise-flex-container {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-bottom: 48px;
-        margin-top: 60px;
-    }
-
-    .expertise-flex-container  > h1 {
-        margin-left: 13px;
-        font-size: 31.2px;
-        line-height: 31.2px;
-    }
-
-    .expertise-details-grid-container {
-        margin-right: 40px;
-        margin-top: 50px;
-        margin-bottom: 80px;
-        margin-right: 40px;
-        grid-template-columns: 592px 500px;
-  
-        grid-row: auto auto;
-        grid-column-gap: 60px;
-        grid-row-gap: 60px;
-        grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), auto));
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .expertise-details-grid-container > div {
-        width: 40%;
-        font-size: 20px;
-        line-height: 28px;
-    }
-
-    .expertise-details-grid-container > p {
-        font-size: 14px;
-        line-height: 24px;
-    }
-    
-    .tagline {
-        height: 150px;
-        width: 100%;
-    }
-    
-    .tagline > h1 {
-        font-size: 84px;
-    }
-
-    .testimonials {
-        margin-top: 60px;
-        margin-left: 40px;  
-        margin-right: 40px;
-    }
-
-    .testimonials > h1 {
-        font-size: 48px;
-        margin-bottom: 40px;
-    }
-    
-    .testimonials-flex-container {
-        display: flex; 
-        flex-flow: row wrap;
-        justify-content: space-between;
-    }
-    
-    .testimonial-content {
-        width: 70%;
-        flex-grow: 1;
-        margin-right: 50px; 
-    }
-    
-    .testimonial-content > p {
-        font-size: 24px;
-        text-wrap: wrap;
-    }
-    
-    .testimonial-name {
-        width: 20%;
-        align-self: flex-end;
-        margin-top: 13px;
-    }
-    
-    .testimonial-name > p {
-        font-size: 14px;
-    }
-
-    .contact-flex-container {
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 0px;
-    }
-
-    .contact-flex-container > h1 {
-        font-size: 79.21px;
-    }
-
-    .contact-href {
-        padding: 0px;
-        margin-top: 27.16px;
-        margin-bottom: 24px;
-        width: 262px;
-        height: 76px;
-        line-height: 76px;
-        font-size: 20px;
-        justify-content: center;        
-    }
-
-    .contact-href > a {
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
-
-    .footer-flex-container {
-        display: flex;
-        flex-direction: row;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 80px;
         justify-content: space-between;
         row-gap: 24px;
     }
