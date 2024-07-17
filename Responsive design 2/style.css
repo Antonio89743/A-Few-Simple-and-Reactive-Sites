@@ -489,7 +489,7 @@ a.active {
         grid-row: auto auto;
         grid-column-gap: 60px;
         grid-row-gap: 60px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         margin: 0px;
         justify-content: space-between;
     }
@@ -498,28 +498,48 @@ a.active {
         margin: 0px;
         padding: 0px;
         width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        object-fit: contain;
     }
     
     .projects-examples-grid > div > img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        object-fit: contain;
+        padding: 0px;
     }
 
     .projects-exaple-crtly-background {
         width: 100%;
-        height: auto;
+        height: 100%;
         border-radius: 32px;
         background-image: linear-gradient(rgba(122, 25, 243, 1), rgba(169, 82, 243, 1));
         overflow: hidden;
+        aspect-ratio: auto 343 / 290;
+        margin: 0px;
     }
     
     .projects-exaple-crtly-background > img {
         width: 100%;
         height: auto;
         position: relative;
-        top: 50%;
+        top: 0%;
         left: 50%;
-        transform: translate(-50%, 5%);
+        transform: translate(-50%, 0%);
+        overflow: hidden;
+        padding: 0px;        
     }
     
     .projects-examples-grid > div > h5 {
@@ -818,28 +838,48 @@ a.active {
         margin: 0px;
         padding: 0px;
         width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        object-fit: contain;
     }
     
     .projects-examples-grid > div > img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        object-fit: contain;
+        padding: 0px;
     }
-
+    
     .projects-exaple-crtly-background {
         width: 100%;
-        height: auto;
+        height: 100%;
         border-radius: 32px;
         background-image: linear-gradient(rgba(122, 25, 243, 1), rgba(169, 82, 243, 1));
         overflow: hidden;
+        aspect-ratio: auto 343 / 290;
+        margin: 0px;
     }
     
     .projects-exaple-crtly-background > img {
         width: 100%;
         height: auto;
         position: relative;
-        top: 50%;
+        top: 0%;
         left: 50%;
-        transform: translate(-50%, 5%);
+        transform: translate(-50%, 0%);
+        overflow: hidden;
+        padding: 0px;   
     }
     
     .projects-examples-grid > div > h5 {
