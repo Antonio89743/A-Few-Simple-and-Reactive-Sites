@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.custom-border_image-radius-home {
+    border-radius: 100px 100px 100px 240px;
+}
+
+.custom-border_image-radius-about {
+    border-radius: 140px 60px 140px 60px;
+}
+
+.custom-gradient {
+    background: linear-gradient(to right, #343045, #C0B7E8, #8176AF, #343045);
+  }
