@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
 module.exports = {
+  mode: 'jit',
   content: [
     "public/*.{html,js}",
     "./public/index.html",
@@ -15,6 +16,7 @@ module.exports = {
         purple_five: 'rgba(192, 183, 232, 1)', 
         icon_color: 'rgba(52, 48, 69, 1)',
         image_background: 'rgba(163, 163, 163, 1)',
+        shade: 'rgba(13, 13, 13, 0.32)',
       },
       borderRadius: {
         border_image_home: '100px, 100px, 100px, 240px',
