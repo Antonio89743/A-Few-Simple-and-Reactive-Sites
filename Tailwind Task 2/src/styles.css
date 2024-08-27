@@ -2,6 +2,18 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+}
+
 .custom-border_image-radius-home {
     border-radius: 100px 100px 100px 240px;
 }
@@ -12,4 +24,4 @@
 
 .custom-gradient {
     background: linear-gradient(to right, #343045, #C0B7E8, #8176AF, #343045);
-  }
+}

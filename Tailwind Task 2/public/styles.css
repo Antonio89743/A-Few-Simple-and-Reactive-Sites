@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -572,10 +576,6 @@ video {
 
 .z-10 {
   z-index: 10;
-}
-
-.order-last {
-  order: 9999;
 }
 
 .col-span-2 {
@@ -662,6 +662,10 @@ video {
   margin-bottom: 2.25rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .mt-11 {
   margin-top: 2.75rem;
 }
@@ -692,6 +696,10 @@ video {
 
 .h-1 {
   height: 0.25rem;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-12 {
@@ -746,6 +754,14 @@ video {
   max-height: 358px;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -768,6 +784,10 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -822,10 +842,6 @@ video {
   grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
 .grid-rows-3 {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
@@ -850,6 +866,10 @@ video {
   flex-direction: column;
 }
 
+.place-content-center {
+  place-content: center;
+}
+
 .place-content-between {
   place-content: space-between;
 }
@@ -860,10 +880,6 @@ video {
 
 .content-between {
   align-content: space-between;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -878,10 +894,6 @@ video {
   justify-content: flex-start;
 }
 
-.justify-end {
-  justify-content: flex-end;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -894,13 +906,17 @@ video {
   justify-content: space-around;
 }
 
+.justify-items-start {
+  justify-items: start;
+}
+
 .justify-items-center {
   justify-items: center;
 }
 
-.gap-x-11 {
-  -moz-column-gap: 2.75rem;
-       column-gap: 2.75rem;
+.gap-x-0 {
+  -moz-column-gap: 0px;
+       column-gap: 0px;
 }
 
 .gap-x-2\.5 {
@@ -911,11 +927,6 @@ video {
 .gap-x-28 {
   -moz-column-gap: 7rem;
        column-gap: 7rem;
-}
-
-.gap-x-3 {
-  -moz-column-gap: 0.75rem;
-       column-gap: 0.75rem;
 }
 
 .gap-x-5 {
@@ -1088,6 +1099,10 @@ video {
   vertical-align: top;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1156,6 +1171,25 @@ video {
 
 .opacity-35 {
   opacity: 0.35;
+}
+
+.outline {
+  outline-style: solid;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .custom-border_image-radius-home {
@@ -1245,6 +1279,10 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .md\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
   .md\:grid-rows-6 {
     grid-template-rows: repeat(6, minmax(0, 1fr));
   }
@@ -1322,6 +1360,10 @@ video {
     display: block;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:h-12 {
     height: 3rem;
   }
@@ -1360,6 +1402,11 @@ video {
 
   .lg\:justify-start {
     justify-content: flex-start;
+  }
+
+  .lg\:gap-x-3 {
+    -moz-column-gap: 0.75rem;
+         column-gap: 0.75rem;
   }
 
   .lg\:overflow-x-hidden {
