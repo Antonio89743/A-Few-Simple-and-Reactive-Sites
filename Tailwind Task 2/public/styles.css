@@ -574,6 +574,14 @@ video {
   inset: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.top-24 {
+  top: 6rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -664,6 +672,10 @@ video {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-7 {
+  margin-right: 1.75rem;
 }
 
 .mt-11 {
@@ -914,6 +926,10 @@ video {
   justify-items: center;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-x-0 {
   -moz-column-gap: 0px;
        column-gap: 0px;
@@ -976,6 +992,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border-0 {
@@ -1428,8 +1448,8 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:block {
-    display: block;
+  .xl\:flex {
+    display: flex;
   }
 
   .xl\:grid {

@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const menu_button = document.getElementById('menu_button');
+    if (menu_button) {
+        menu_button.addEventListener('click', handleMenuButtonClick);
+    }
     const buttonLefttContact = document.getElementById('button_left_contact');
     if (buttonLefttContact) {
         buttonLefttContact.addEventListener('click', handleButtonClick);
@@ -33,6 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+function handleMenuButtonClick() {
+
+    const element = document.getElementById('menu')
+    element.classList.toggle('hidden');
+
+
+}
 
 function handleButtonClick(event) {
     let scroll_div
