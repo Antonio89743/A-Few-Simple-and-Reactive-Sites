@@ -23,10 +23,12 @@ jobs:
         run: |
           rm -rf gh-pages/*
           mkdir -p gh-pages/First-HTML-CSS-Task
-          mkdir -p gh-pages/site2
+          mkdir -p gh-pages/Responsive design 1
+          mkdir -p gh-pages/Responsive design 2
 
           cp -r First-HTML-CSS-Task/* gh-pages/First-HTML-CSS-Task/
           cp -r Responsive design 1/* gh-pages/Responsive design 1/
+          cp -r Responsive design 2/* gh-pages/Responsive design 2/
 
       - name: Commit and push
         run: |
