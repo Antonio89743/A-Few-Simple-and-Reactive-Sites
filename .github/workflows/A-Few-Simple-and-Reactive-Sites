@@ -22,11 +22,11 @@ jobs:
       - name: Prepare deployment
         run: |
           rm -rf gh-pages/*
-          mkdir -p gh-pages/site1
+          mkdir -p gh-pages/First-HTML-CSS-Task
           mkdir -p gh-pages/site2
 
-          cp -r site1/* gh-pages/site1/
-          cp -r site2/* gh-pages/site2/
+          cp -r First-HTML-CSS-Task/* gh-pages/First-HTML-CSS-Task/
+          cp -r Responsive design 1/* gh-pages/Responsive design 1/
 
       - name: Commit and push
         run: |
