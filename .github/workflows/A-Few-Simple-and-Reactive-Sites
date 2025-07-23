@@ -1,0 +1,39 @@
+# .github/workflows/deploy.yml
+name: Deploy multiple sites to GitHub Pages
+
+on:
+  push:
+    branches: [main]  # or 'master', depending on your default
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Prepare deployment
+        run: |
+          rm -rf gh-pages/*
+          mkdir -p gh-pages/site1
+          mkdir -p gh-pages/site2
+
+          cp -r site1/* gh-pages/site1/
+          cp -r site2/* gh-pages/site2/
+
+      - name: Commit and push
+        run: |
+          cd gh-pages
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Deploy multiple sites"
+          git push origin gh-pages
+
