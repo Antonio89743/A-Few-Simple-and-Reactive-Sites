@@ -1,25 +1,21 @@
 name: Deploy multiple sites to GitHub Pages
-
-on:
-  push:
-    branches: [main]  # adjust if your default branch is 'master'
+on: push:
+  branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Prepare output folder
+      - name: Prepare output
         run: |
           mkdir output
-          cp -r First-HTML-CSS-Task output/First-HTML-CSS-Task
-          cp -r Responsive-design-1 output/Responsive-design-1
-          cp -r Responsive-design-2 output/Responsive-design-2
+          cp -r "First-HTML-CSS-Task" output/
+          cp -r "Responsive-design-1" output/
+          cp -r "Responsive-design-2" output/
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
